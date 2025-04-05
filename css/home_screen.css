@@ -1,0 +1,39 @@
+@import "fonts.css";
+
+body {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: SamsungSans;
+}
+
+.content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.toolbar {
+    display: grid;
+    grid-template-columns: 10% 67% 5% 4% 1% 4% auto;
+    margin-top: 5px;
+}
+
+.toolbar img {
+    display: inline-block;
+    width: 16px;
+    transform: translateY(2px);
+}
+
+.dayTime {
+    margin-top: 18%;
+    text-align: center;
+}
+
+#currentDay {
+    font-size: 27px;
+}
+
+#currentTime1 {
+    font-size: 95px;
+}

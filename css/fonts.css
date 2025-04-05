@@ -1,0 +1,10 @@
+@font-face {
+    font-family: SamsungSans;
+    src: url(../fonts/SamsungSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: SamsungSans;
+    src: url(../fonts/SamsungSans-Bold.ttf);
+    font-weight: bold;
+}
