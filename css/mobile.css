@@ -33,4 +33,17 @@
         width: 55px;
         margin-bottom: 5px;
     }
+
+    h1 {
+        margin-top: 33%;
+    }
+
+    .contactLetter {
+        margin-top: 10%;
+    }
+
+    #mail {
+        width: 50%;
+        top: 3px;
+    }
 }
