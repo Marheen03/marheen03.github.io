@@ -33,6 +33,11 @@ function initializeToolbarTime() {
 }
 
 
+function returntoHomeScreen() {
+    var iframe = document.getElementsByTagName("iframe")[0];
+    iframe.src = "pages/home_screen.html";
+}
+
 toggled = false;
 function rotateTablet() {
     var tablet = document.getElementsByClassName("tablet")[0];
@@ -58,4 +63,15 @@ function rotateTablet() {
         iframe.style.height = width + "px";
         iframe.style.width = height + "px";
     }
+}
+
+function navigateToApp(x) {
+    var page;
+    switch(x) {
+        case 2:
+            page = 'contacts';
+            break;
+        
+    }
+    window.open(page + ".html", "_self");
 }

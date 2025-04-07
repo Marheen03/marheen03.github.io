@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakti</title>
+    <link rel="stylesheet" href="../css/contacts.css" type="text/css">
+    <link rel="stylesheet" href="../css/mobile.css" type="text/css">
+</head>
+<body onload="initializeToolbarTime()">
+    <div class="header">
+        <div class="content">
+            <div class="toolbar toolbarInverted">
+                <span id="currentTime"></span>
+                <span class="separator1"></span>
+    
+                <img src="../images/icons/signal.png">
+                <img src="../images/icons/wifi.png">
+    
+                <span class="separator2"></span>
+                <img src="../images/icons/battery.png">
+                100 %
+            </div>
+
+            <p>Kontakti</p>
+        </div>
+    </div>
+
+    <h1>Kontakti</h1>
+
+    <div class="content">G</div>
+    <button type="button" class="collapsible">
+        <div class="content">
+            <img src="../images/logos/github.png">
+            <span>GitHub</span>
+        </div>
+    </button>
+    <div class="collapsibleContent">
+        <div class="content">
+            <p>
+                Marheen03
+                <a href="https://github.com/Marheen03" target="_blank" class="button">
+                    <img src="../images/icons/external.png">
+                    Repozitorij
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        
+        for (var i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

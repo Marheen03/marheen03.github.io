@@ -1,0 +1,96 @@
+@import "fonts.css";
+@import "toolbar.css";
+
+body {
+    font-family: SamsungSans;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #1A9B00;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header p {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 4%;
+    margin-top: 4%;
+}
+
+.content {
+    width: 90%;
+    margin: 0 auto;
+    container-type: inline-size;
+    container-name: iframe;
+}
+
+h1 {
+    font-size: 37px;
+    margin-top: 23%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.collapsible {
+    background-color: #F8F8F8;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    border-top: 1px solid black;
+}
+
+.collapsible:hover {
+    background-color: #f1f1f1;
+}
+
+.collapsible:last-child {
+    border-bottom: 1px solid black;
+}
+
+.collapsible span {
+    position: relative;
+    top: -5px;
+    left: 10px;
+}
+
+.collapsible img {
+    width: 30px;
+    margin-left: -15px;
+}
+  
+.collapsibleContent {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #F8F8F8;
+    border-bottom: 1px solid black;
+    transition: max-height 0.2s ease-out;
+}
+
+.button:link, .button:visited {
+    background-color: #1A9B00;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+  
+.button:hover, .button:active {
+    background-color: red;
+}
+
+@container iframe (min-width: 560px) and (max-width: 700px) {
+    
+}

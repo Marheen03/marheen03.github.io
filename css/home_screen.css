@@ -7,6 +7,8 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: SamsungSans;
+    margin: 0;
+    padding: 0;
 }
 
 .content {
@@ -36,6 +38,10 @@ body {
     text-align: center;
     color: white;
     font-size: 17px;
+}
+
+.iconsGrid div {
+    cursor: pointer;
 }
 
 .iconsGrid img {

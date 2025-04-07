@@ -9,3 +9,7 @@
     width: 16px;
     transform: translateY(2px);
 }
+
+.toolbarInverted {
+    filter: invert(1);
+}
