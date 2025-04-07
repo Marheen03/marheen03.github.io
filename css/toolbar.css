@@ -1,0 +1,11 @@
+.toolbar {
+    display: grid;
+    grid-template-columns: 10% 65% 5% 4% 1% 4% auto;
+    margin-top: 5px;
+}
+
+.toolbar img {
+    display: inline-block;
+    width: 16px;
+    transform: translateY(2px);
+}

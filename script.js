@@ -31,3 +31,31 @@ function initializeToolbarTime() {
         document.getElementById("currentTime").innerHTML = hoursMinutes;
     }, 1000);
 }
+
+
+toggled = false;
+function rotateTablet() {
+    var tablet = document.getElementsByClassName("tablet")[0];
+    var iframe = document.getElementsByTagName("iframe")[0];
+    var circle = document.getElementsByClassName("circle")[0];
+    var height = iframe.offsetHeight;
+    var width = iframe.offsetWidth;
+
+    if (!toggled) {
+        toggled = true;
+        tablet.style.transform = "rotate(90deg)";
+        circle.style.marginTop = "13%";
+
+        iframe.style.transform = "rotate(-90deg) translate(-5%, -6%)";
+        iframe.style.height = width + "px";
+        iframe.style.width = height + "px";
+    } else {
+        toggled = false;
+        tablet.style.transform = "rotate(0)";
+        circle.style.marginTop = "6px";
+
+        iframe.style.transform = "rotate(0) translate(0, 0)";
+        iframe.style.height = width + "px";
+        iframe.style.width = height + "px";
+    }
+}

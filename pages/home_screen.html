@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Početni ekran</title>
+    <link rel="stylesheet" href="../css/home_screen.css" type="text/css">
+    <link rel="stylesheet" href="../css/mobile.css" type="text/css">
+</head>
+<body onload="initializeHomeScreen()">
+    <div class="content">
+        <div class="toolbar">
+            <span id="currentTime"></span>
+            <span class="separator1"></span>
+
+            <img src="../images/icons/signal.png">
+            <img src="../images/icons/wifi.png">
+
+            <span class="separator2"></span>
+            <img src="../images/icons/battery.png">
+            100 %
+        </div>
+
+        <div class="dayTime">
+            <div id="currentDay"></div>
+            <div id="currentTime1"></div>
+        </div>
+
+        <div class="iconsGrid">
+            <div>
+                <img src="../images/icons/oMeni.png">
+                <div>O meni</div>
+            </div>
+            <div>
+                <img src="../images/icons/projekti.png">
+                <div>Projekti</div>
+            </div>
+            <div>
+                <img src="../images/icons/kontakti.png">
+                <div>Kontakti</div>
+            </div>
+            <div>
+                <img src="../images/icons/datoteke.png">
+                <div>Datoteke</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 500px) {
     body {
         margin: 0;
     }
@@ -14,5 +14,23 @@
 
     .rotateTabletButton {
         display: none;
+    }
+
+    .toolbar {
+        grid-template-columns: 10% 53% 7% 7% 1% 7% auto;
+    }
+
+    .dayTime {
+        margin-top: 50%;
+    }
+
+    .iconsGrid {
+        font-size: 15px;
+        margin-top: 80%;
+    }
+
+    .iconsGrid img {
+        width: 55px;
+        margin-bottom: 5px;
     }
 }
