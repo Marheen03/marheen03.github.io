@@ -49,7 +49,7 @@ function rotateTablet() {
     if (!toggled) {
         toggled = true;
         tablet.style.transform = "rotate(90deg)";
-        circle.style.marginTop = "13%";
+        circle.style.marginTop = "14.5%";
 
         iframe.style.transform = "rotate(-90deg) translate(-5%, -6%)";
         iframe.style.height = width + "px";
@@ -57,7 +57,7 @@ function rotateTablet() {
     } else {
         toggled = false;
         tablet.style.transform = "rotate(0)";
-        circle.style.marginTop = "6px";
+        circle.style.marginTop = "16px";
 
         iframe.style.transform = "rotate(0) translate(0, 0)";
         iframe.style.height = width + "px";
@@ -68,6 +68,9 @@ function rotateTablet() {
 function navigateToApp(x) {
     var page;
     switch(x) {
+        case 0:
+            page = 'about';
+            break;
         case 2:
             page = 'contacts';
             break;

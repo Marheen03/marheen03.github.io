@@ -8,3 +8,24 @@
     src: url(../fonts/SamsungSans-Bold.ttf);
     font-weight: bold;
 }
+
+header {
+    background-color: #1A9B00;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+header p {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 4%;
+    margin-top: 4%;
+}
+
+.content p {
+    line-height: 1.4;
+}

@@ -21,11 +21,11 @@ body {
     width: auto;
     height: 40rem;
     margin: auto;
-    margin-top: 5%;
+    margin-top: 4%;
     border: 30px black solid;
     background-color: black;
     border-top-width: 60px;
-    border-bottom-width: 60px;
+    border-bottom-width: 75px;
     border-radius: 36px;
     transition: .4s;
 }
@@ -52,7 +52,7 @@ body {
     height: 40px;
     position: absolute;
     left: 50%;
-    bottom: -70px;
+    bottom: -80px;
     transform: translate(-50%, -55%);
     background: white;
     border-radius: 50%;
@@ -71,7 +71,7 @@ iframe {
     background-color: black;
     border-radius: 50%;
     margin: 0 auto;
-    margin-top: 6px;
+    margin-top: 16px;
     position: relative;
     z-index: 1;
     cursor: pointer;

@@ -10,6 +10,19 @@
     .tablet {
         margin: 0;
         height: 87vh;
+        border-bottom-width: 65px;
+    }
+
+    .tablet:after {
+        bottom: -68px;
+    }
+
+    .circle {
+        margin-top: 12px;
+    }
+
+    iframe {
+        height: 99%;
     }
 
     .rotateTabletButton {

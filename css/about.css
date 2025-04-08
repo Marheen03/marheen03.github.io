@@ -1,0 +1,145 @@
+@import "fonts.css";
+@import "toolbar.css";
+
+body {
+    font-family: SamsungSans;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20%;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #2D82B7;
+}
+
+header p {
+    color: white;
+}
+
+.content {
+    width: 90%;
+    margin: 0 auto;
+    container-type: inline-size;
+    container-name: iframe;
+}
+
+h1 {
+    font-size: 37px;
+    margin-bottom: 7%;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.content a:link {
+    text-decoration: none;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+#first {
+    margin-top: 27%;
+}
+
+.scroll-container {
+    display: block;
+    height: auto;
+    margin-bottom: 28%;
+}
+  
+.carousel-primary,
+.carousel-secondary {
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+}
+  
+.carousel-primary img {
+    display: block;
+    margin: 0 auto;
+}
+
+.carousel-primary p {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+  
+.carousel-primary {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    animation: scroll-horizontal 20s linear infinite;
+}
+  
+.carousel-secondary {
+    animation: scroll-horizontal 20s linear infinite;
+    animation-delay: 10s;
+}
+
+/*
+@keyframes scroll-horizontal {
+    0% {
+        left: 100%;
+    }
+    
+    100% {
+        left: -100%;
+    }
+}
+  
+.carousel-primary:hover,
+.carousel-primary:hover~.carousel-secondary {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+  
+.carousel-secondary:hover {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+  
+  
+.scroll-container:hover>.carousel-primary:not(:hover) {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+*/
+
+footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    position: fixed;
+    bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: white;
+    border-top: 3px solid #2D82B7;
+    text-align: center;
+    font-size: 20px;
+}
+
+footer img, footer p {
+    display: block;
+    margin: 0 auto;
+}
+
+footer img {
+    width: 45px;
+}
+
+footer a:link {
+    text-decoration: none;
+    color: black;
+}
