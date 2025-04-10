@@ -19,7 +19,7 @@ body {
 .tablet {
     position: relative;
     width: auto;
-    height: 40rem;
+    height: 75vh;
     margin: auto;
     margin-top: 4%;
     border: 30px black solid;

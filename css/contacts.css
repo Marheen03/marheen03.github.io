@@ -20,8 +20,6 @@ header p {
 .content {
     width: 90%;
     margin: 0 auto;
-    container-type: inline-size;
-    container-name: iframe;
 }
 
 h1 {

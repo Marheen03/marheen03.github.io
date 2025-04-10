@@ -1,6 +1,10 @@
 @import "fonts.css";
 @import "toolbar.css";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: SamsungSans;
     background-color: white;
@@ -21,15 +25,13 @@ header p {
 .content {
     width: 90%;
     margin: 0 auto;
-    container-type: inline-size;
-    container-name: iframe;
 }
 
 h1 {
     font-size: 37px;
     margin-bottom: 7%;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 15%;
 }
 
 .content a:link {
@@ -45,14 +47,13 @@ h1 {
 }
 
 .scroll-container {
-    display: block;
     height: auto;
-    margin-bottom: 28%;
+    margin-bottom: 40%;
 }
   
 .carousel-primary,
 .carousel-secondary {
-    left: 0;
+    left: 100%;
     width: 100%;
     overflow: hidden;
     position: absolute;
@@ -62,6 +63,7 @@ h1 {
 .carousel-primary img {
     display: block;
     margin: 0 auto;
+    transform: scale(0.9);
 }
 
 .carousel-primary p {
@@ -81,7 +83,7 @@ h1 {
     animation-delay: 10s;
 }
 
-/*
+
 @keyframes scroll-horizontal {
     0% {
         left: 100%;
@@ -114,7 +116,7 @@ h1 {
     -o-animation-play-state: paused;
     animation-play-state: paused;
 }
-*/
+
 
 footer {
     display: grid;
@@ -137,6 +139,14 @@ footer img, footer p {
 
 footer img {
     width: 45px;
+}
+
+.active {
+    color: #2D82B7;
+}
+
+.active img {
+    filter: invert(20%) sepia(243%) saturate(1576%) hue-rotate(207deg) brightness(120%) contrast(73%);
 }
 
 footer a:link {

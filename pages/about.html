@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="../css/about.css" type="text/css">
     <link rel="stylesheet" href="../css/mobile.css" type="text/css">
 </head>
-<body onload="initializeToolbarTime()">
+<body onload="initializeToolbarTime()" id="aboutPage">
+    <a name="oMeni"></a>
     <header>
         <div class="content">
             <div class="toolbar inverted">
@@ -35,7 +36,8 @@
             bez obzira bilo ono razvoj aplikacija ili web sjedišta.
         </p>
     </div>
-
+    
+    <a name="vjestine"></a>
     <h1>Vještine</h1>
 
     <div class="scroll-container">
@@ -86,7 +88,7 @@
     </div>
 
     <div class="content">
-        <h1>Servisi</h1>
+        <h1 id="servisi">Servisi</h1>
         <p>
             Ono što radim su uglavnom dizajn sučelja i korisničkog iskustva (UI/UX)
             i razvoj web sjedišta te mobilne i desktop aplikacije.
@@ -94,19 +96,19 @@
     </div>
 
     <footer>
-        <a href="#">
+        <a href="#oMeni" onclick="setActive(0)">
             <div>
                 <img src="../images/icons/about.png">
                 <p>O meni</p>
             </div>
         </a>
-        <a href="#">
+        <a href="#vjestine" onclick="setActive(1)">
             <div>
                 <img src="../images/icons/skills.png">
                 <p>Vještine</p>
             </div>
         </a>
-        <a href="#">
+        <a href="#servisi" onclick="setActive(2)">
             <div>
                 <img src="../images/icons/services.png">
                 <p>Servisi</p>

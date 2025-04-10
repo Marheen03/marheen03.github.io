@@ -49,7 +49,7 @@ function rotateTablet() {
     if (!toggled) {
         toggled = true;
         tablet.style.transform = "rotate(90deg)";
-        circle.style.marginTop = "14.5%";
+        circle.style.marginTop = "15.9%";
 
         iframe.style.transform = "rotate(-90deg) translate(-5%, -6%)";
         iframe.style.height = width + "px";
@@ -77,4 +77,12 @@ function navigateToApp(x) {
         
     }
     window.open(page + ".html", "_self");
+}
+
+function setActive(id) {
+    var footerLinks = document.querySelectorAll('footer > a > div');
+    for (var i=0; i < footerLinks.length; i++) {
+        footerLinks[i].classList.remove('active');
+    }
+    footerLinks[id].classList.add('active');
 }
