@@ -1,16 +1,15 @@
 @font-face {
     font-family: SamsungSans;
-    src: url(../fonts/SamsungSans-Regular.ttf);
+    src: url(../others/SamsungSans-Regular.ttf);
 }
 
 @font-face {
     font-family: SamsungSans;
-    src: url(../fonts/SamsungSans-Bold.ttf);
+    src: url(../others/SamsungSans-Bold.ttf);
     font-weight: bold;
 }
 
 header {
-    background-color: #1A9B00;
     width: 100%;
     position: fixed;
     top: 0;
@@ -26,6 +25,19 @@ header p {
     margin-top: 4%;
 }
 
+.content {
+    width: 90%;
+    margin: 0 auto;
+}
+
 .content p {
     line-height: 1.4;
+}
+
+.content a:link {
+    text-decoration: none;
+}
+
+.content a:hover {
+    text-decoration: underline;
 }

@@ -1,0 +1,116 @@
+@import "fonts.css";
+@import "toolbar.css";
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: SamsungSans;
+    margin-top: 20%;
+}
+
+header {
+    background-color: #F28C32;
+}
+
+header img {
+    width: 14px;
+    margin-right: 15px;
+    position: relative;
+    top: 2px;
+}
+
+.breadcrumb {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: #F28C32;
+    color: black;
+    font-size: 15px;
+}
+
+.breadcrumb .separator {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.breadcrumb .active {
+    font-weight: bold;
+}
+
+.breadcrumb a:link {
+    color: black;
+}
+
+#first {
+    display: block;
+    margin-top: 30%;
+    border-top: 1px solid black;
+}
+
+.file {
+    background-color: #F8F8F8;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+}
+
+.file .content {
+    display: grid;
+    grid-template-columns: 12% 88%;
+}
+
+.file:hover {
+    background-color: #f1f1f1;
+}
+
+.file span {
+    position: relative;
+    top: 12px;
+}
+
+.file img {
+    width: 40px;
+    position: relative;
+    left: -5px;
+}
+
+.pdfIcon {
+    position: relative;
+    top: 5px !important;
+}
+
+.pdfInfo {
+    top: 3px !important;
+}
+
+.pdfDate {
+    top: 0 !important;
+    font-size: 14px;
+}
+
+#pdfView {
+    height: 100%;
+    overflow: hidden;
+}
+
+.pdfViewer {
+    margin-top: -3%;
+    width: 100%;
+    height: 85vh;
+}
+
+@container pdf (min-width: 600px) and (max-width: 700px) {
+    .pdfViewer {
+        margin-top: -4%;
+    }
+}

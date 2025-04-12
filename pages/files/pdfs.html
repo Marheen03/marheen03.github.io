@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Životopisi</title>
+    <link rel="stylesheet" href="../../css/files.css" type="text/css">
+    <link rel="stylesheet" href="../../css/mobile.css" type="text/css">
+</head>
+<body onload="initializeToolbarTime()" id="files">
+    <header>
+        <div class="content">
+            <div class="toolbar inverted">
+                <span id="currentTime"></span>
+                <span class="separator1"></span>
+    
+                <img src="../../images/icons/signal.png">
+                <img src="../../images/icons/wifi.png">
+    
+                <span class="separator2"></span>
+                <img src="../../images/icons/battery.png">
+                100 %
+            </div>
+            <p>
+                <a href="index.html"><img src="../../images/icons/arrow.png"></a>
+                Životopisi
+            </p>
+        </div>
+        <div class="breadcrumb">
+            <div class="content">
+                <a href="index.html">Datoteke</a>
+                <span class="separator">></span>
+                <span class="active">Životopisi</span>
+            </div>
+        </div>
+    </header>
+
+    <a href="pdf_viewer.html?lang=en" id="first">
+        <button type="button" class="file">
+            <div class="content">
+                <img src="../../images/icons/pdf.png" class="pdfIcon">
+                <span class="pdfInfo">
+                    životopis_en.pdf
+                    <br>
+                    <span class="pdfDate">12. 4. 2025., 110 KB, PDF datoteka</span>
+                </span>
+            </div>
+        </button>
+    </a>
+    <a href="pdf_viewer.html?lang=hr">
+        <button type="button" class="file">
+            <div class="content">
+                <img src="../../images/icons/pdf.png" class="pdfIcon">
+                <span class="pdfInfo">
+                    životopis_hr.pdf
+                    <br>
+                    <span class="pdfDate">12. 4. 2025., 111 KB, PDF datoteka</span>
+                </span>
+            </div>
+        </button>
+    </a>
+
+    <script src="../../script.js"></script>
+</body>
+</html>

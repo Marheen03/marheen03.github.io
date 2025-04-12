@@ -116,8 +116,10 @@
                 var content = this.nextElementSibling;
                 if (content.style.maxHeight){
                     content.style.maxHeight = null;
+                    content.style.paddingBottom = "0";
                 } else {
                     content.style.maxHeight = content.scrollHeight + "px";
+                    content.style.paddingBottom = "4%";
                 }
             });
         }

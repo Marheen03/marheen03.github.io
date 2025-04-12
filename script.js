@@ -74,6 +74,9 @@ function navigateToApp(x) {
         case 2:
             page = 'contacts';
             break;
+        case 3:
+            page = 'files/index';
+            break;
         
     }
     window.open(page + ".html", "_self");

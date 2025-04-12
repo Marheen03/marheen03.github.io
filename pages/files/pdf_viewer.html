@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Životopis</title>
+    <link rel="stylesheet" href="../../css/files.css" type="text/css">
+    <link rel="stylesheet" href="../../css/mobile.css" type="text/css">
+</head>
+<body onload="initializeToolbarTime()" id="pdfView">
+    <header>
+        <div class="content">
+            <div class="toolbar inverted">
+                <span id="currentTime"></span>
+                <span class="separator1"></span>
+    
+                <img src="../../images/icons/signal.png">
+                <img src="../../images/icons/wifi.png">
+    
+                <span class="separator2"></span>
+                <img src="../../images/icons/battery.png">
+                100 %
+            </div>
+            <p>
+                <a href="pdfs.html"><img src="../../images/icons/arrow.png"></a>
+                <span id="cvName"></span>
+            </p>
+        </div>
+    </header>
+
+    <div style="container-type: inline-size; container-name: pdf;">
+        <object type="application/pdf" class="pdfViewer"></object>
+    </div>
+
+    <div class="content" id="errorMessage">
+        <a target="_blank">Preuzmite životopis</a>
+    </div>
+
+    <script src="../../script.js"></script>
+    <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const lang = urlParams.get('lang');
+
+        var cvName = document.getElementById("cvName");
+        var errorMessage = document.getElementById("errorMessage");
+        var pdfViewer = document.getElementsByClassName("pdfViewer")[0];
+
+        cvName.innerHTML = "zivotopis_" + lang + ".pdf";
+        var url = "../../others/zivotopis_" + lang + ".pdf";
+
+        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            // pregledavanje preko mobitela
+            pdfViewer.style.display = "none";
+            errorMessage.style.display = "block";
+            
+            var link = document.querySelector("#errorMessage > a");
+            link.href = url;
+        } else {
+            // pregledavanje preko računala
+            pdfViewer.style.display = "block";
+            errorMessage.style.display = "none";
+            pdfViewer.data = url;
+        }
+    </script>
+</body>
+</html>

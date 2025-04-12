@@ -7,24 +7,12 @@ html {
 
 body {
     font-family: SamsungSans;
-    background-color: white;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 20%;
+    margin-bottom: 25%;
     overflow-x: hidden;
 }
 
 header {
     background-color: #2D82B7;
-}
-
-header p {
-    color: white;
-}
-
-.content {
-    width: 90%;
-    margin: 0 auto;
 }
 
 h1 {
@@ -138,7 +126,7 @@ footer img, footer p {
 }
 
 footer img {
-    width: 45px;
+    width: 40px;
 }
 
 .active {

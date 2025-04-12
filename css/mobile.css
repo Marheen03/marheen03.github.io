@@ -87,4 +87,44 @@
     footer img {
         width: 40px;
     }
+
+    #files #first {
+        margin-top: 45%;
+    }
+
+    .file .content {
+        grid-template-columns: 15% 85%;
+    }
+
+    .file img {
+        width: 33px;
+    }
+
+    .file span {
+        font-size: 18px;
+        top: 8px;
+    }
+
+    .pdfIcon {
+        position: relative;
+        top: 5px !important;
+    }
+    
+    .pdfInfo {
+        top: 3px !important;
+    }
+    
+    .pdfDate {
+        top: 0 !important;
+        font-size: 13px !important;
+    }
+    
+    .pdfViewer {
+        margin-top: 30%;
+    }
+
+    #errorMessage {
+        margin-top: 30%;
+        font-size: 23px;
+    }
 }
