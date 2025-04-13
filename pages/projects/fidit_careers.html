@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIDITCareers</title>
+    <link rel="stylesheet" href="../../css/projects.css" type="text/css">
+    <link rel="stylesheet" href="../../css/mobile.css" type="text/css">
+    <link rel="stylesheet" href="../../css/photoswipe.css" type="text/css">
+</head>
+<body onload="initializeToolbarTime()" id="projectDetails">
+    <header>
+        <div class="content">
+            <div class="toolbar inverted">
+                <span id="currentTime"></span>
+                <span class="separator1"></span>
+    
+                <img src="../../images/icons/signal.png">
+                <img src="../../images/icons/wifi.png">
+    
+                <span class="separator2"></span>
+                <img src="../../images/icons/battery.png" id="battery">
+                100 %
+            </div>
+            <p>
+                <a href="index.html"><img src="../../images/icons/arrow.png"></a>
+                FIDITCareers
+            </p>
+        </div>
+    </header>
+
+    <div class="content">
+        <h1 id="first">FIDITCareers</h1>
+        
+        <p>
+           <strong>FIDITCareers</strong> je kolaborativno izrađena aplikacija koja studentima nastoji olakšati pronalazak studentske prakse. Dodatno, omogućuje umrežavanje poslodavaca sa studentima.
+        </p>
+        <p>
+            Korištene tehnologije za izradu su Quasar (Vue.js) razvojnom okviru, a mobilna aplikacija razvijena je u Android Studio (Java) razvojnom okruženju.
+        </p>
+
+        <p id="projectButtons">
+            <a href="https://fidit-careers-dino-grzinic.web.app/" target="_blank" class="button">
+                <img src="../../images/icons/external.png">
+                Link (desktop)
+            </a>
+            <a href="https://gitlab.com/Marheen03/fiditcareers" target="_blank" class="button">
+                <img src="../../images/logos/gitlab.png" style="filter: brightness(0) invert(1);">
+                GitLab (desktop)
+            </a>
+            <a href="https://github.com/9helix/FIDIT-Careers" target="_blank" class="button btn-mt">
+                <img src="../../images/logos/github.png" style="filter: invert(1) brightness(1.5);">
+                GitHub (mobilna)
+            </a>
+        </p>
+
+        <div class="pswp-gallery" id="my-gallery">
+            <a href="../../images/fidit_careers/fidit_careers_desktop1.jpg"
+                data-pswp-width="710"
+                data-pswp-height="340"
+                target="_blank"
+            >
+                <div 
+                    class="image"
+                    style="background-image: url(../../images/fidit_careers/fidit_careers_desktop1.jpg);">
+                </div>
+            </a>
+            <a href="../../images/fidit_careers/fidit_careers_desktop2.jpg"
+                data-pswp-width="590"
+                data-pswp-height="395"
+                target="_blank"
+            >
+                <div 
+                    class="image"
+                    style="background-image: url(../../images/fidit_careers/fidit_careers_desktop2.jpg);">
+                </div>
+            </a>
+            <a href="../../images/fidit_careers/fidit_careers_desktop3.jpg"
+                data-pswp-width="760"
+                data-pswp-height="365"
+                target="_blank"
+            >
+                <div 
+                    class="image"
+                    style="background-image: url(../../images/fidit_careers/fidit_careers_desktop3.jpg);">
+                </div>
+            </a>
+            <a href="../../images/fidit_careers/fidit_careers_desktop4.jpg"
+                data-pswp-width="660"
+                data-pswp-height="445"
+                target="_blank"
+            >
+                <div 
+                    class="image"
+                    style="background-image: url(../../images/fidit_careers/fidit_careers_desktop4.jpg);">
+                </div>
+            </a>
+            <a href="../../images/fidit_careers/fidit_careers_mobile1.jpg"
+                data-pswp-width="340"
+                data-pswp-height="650"
+                target="_blank"
+            >
+                <div 
+                    class="image"
+                    style="background-image: url(../../images/fidit_careers/fidit_careers_mobile1.jpg);">
+                </div>
+            </a>
+            <a href="../../images/fidit_careers/fidit_careers_mobile2.jpg"
+                data-pswp-width="340"
+                data-pswp-height="650"
+                target="_blank"
+            >
+                <div 
+                    class="image"
+                    style="background-image: url(../../images/fidit_careers/fidit_careers_mobile2.jpg);">
+                </div>
+            </a>
+            <a href="../../images/fidit_careers/fidit_careers_mobile3.jpg"
+                data-pswp-width="335"
+                data-pswp-height="670"
+                target="_blank"
+            >
+                <div 
+                    class="image"
+                    style="background-image: url(../../images/fidit_careers/fidit_careers_mobile3.jpg);">
+                </div>
+            </a>
+            <a href="../../images/fidit_careers/fidit_careers_mobile4.jpg"
+                data-pswp-width="335"
+                data-pswp-height="670"
+                target="_blank"
+            >
+                <div 
+                    class="image"
+                    style="background-image: url(../../images/fidit_careers/fidit_careers_mobile4.jpg);">
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script src="../../others/script.js"></script>
+    <script type="module">
+        import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe/dist/photoswipe-lightbox.esm.js';
+
+        const lightbox = new PhotoSwipeLightbox({
+            gallery: '#my-gallery',
+            children: 'a',
+            pswpModule: () => import('https://unpkg.com/photoswipe')
+        });
+
+        lightbox.init();
+    </script>
+</body>
+</html>

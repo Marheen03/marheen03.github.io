@@ -19,7 +19,7 @@ header {
 
 header p {
     color: white;
-    font-size: 25px;
+    font-size: 25px !important;
     font-weight: bold;
     margin-bottom: 4%;
     margin-top: 4%;
@@ -32,6 +32,7 @@ header p {
 
 .content p {
     line-height: 1.4;
+    font-size: 17px;
 }
 
 .content a:link {

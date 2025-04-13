@@ -1,6 +1,7 @@
 @media only screen and (max-width: 500px) {
     body {
         margin: 0;
+        margin-bottom: 5%;
     }
 
     .tabletContent {
@@ -154,11 +155,11 @@
         margin-top: 10%;
     }
 
-    .button {
+    #projectButtons .button {
         width: 80%;
     }
 
-    .button img {
+    #projectButtons .button img {
         top: 4px;
     }
 
@@ -167,6 +168,10 @@
     }
 
     #my-gallery .image {
-        height: 17vh;
+        height: 15vh;
+    }
+
+    .btn-mt {
+        margin-top: 12%;
     }
 }
