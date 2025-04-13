@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekti</title>
+    <link rel="stylesheet" href="../../css/projects.css" type="text/css">
+    <link rel="stylesheet" href="../../css/mobile.css" type="text/css">
+</head>
+<body onload="initializeToolbarTime()">
+    <header>
+        <div class="content">
+            <div class="toolbar inverted">
+                <span id="currentTime"></span>
+                <span class="separator1"></span>
+    
+                <img src="../../images/icons/signal.png">
+                <img src="../../images/icons/wifi.png">
+    
+                <span class="separator2"></span>
+                <img src="../../images/icons/battery.png" id="battery">
+                100 %
+            </div>
+            <p>Projekti</p>
+        </div>
+    </header>
+
+    <div class="content">
+        <h1 id="first">Moji projekti</h1>
+        <h3>Broj projekta: <span id="numOfProjects"></span></h3>
+
+        <div class="projects">
+            <a href="#">
+                <div class="project">
+                    <div class="image" style="background-image: url(../../images/don_loro/don_loro1.jpg);"></div>
+                    <p>Don Loro</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="project">
+                    <div class="image" style="background-image: url(../../images/fidit_careers/fidit_careers_desktop1.jpg);"></div>
+                    <p>FIDITCareers</p>
+                </div>
+            </a>
+            <a href="sportsportal.html">
+                <div class="project">
+                    <div class="image" style="background-image: url(../../images/sports_portal/sports_portal1.jpg);"></div>
+                    <p>SportsPortal</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="project">
+                    <div class="image" style="background-image: url(../../images/tasksharp/tasksharp1.jpg);"></div>
+                    <p>TaskSharp</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script src="../../script.js"></script>
+    <script>
+        var numOfProjects = document.getElementById("numOfProjects");
+        var projects = document.querySelectorAll(".projects > a");
+        numOfProjects.innerHTML = projects.length;
+    </script>
+</body>
+</html>

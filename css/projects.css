@@ -1,0 +1,104 @@
+@import "fonts.css";
+@import "toolbar.css";
+
+body {
+    font-family: SamsungSans;
+    margin-bottom: 7%;
+}
+
+header {
+    background-color: #D4006F;
+}
+
+header img {
+    width: 14px;
+    margin-right: 15px;
+    position: relative;
+    top: 2px;
+}
+
+h1 {
+    font-size: 37px;
+    margin-top: 28%;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+h3 {
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 12%;
+}
+
+.projects, #projectButtons {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.projects a:link {
+    color: black;
+}
+
+.project {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.image {
+    width: 100%;
+    height: 35vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#projectDetails h1 {
+    margin-bottom: 10%;
+}
+
+.project p {
+    margin-top: 5%;
+    font-size: 20px;
+}
+
+#projectButtons {
+    margin-top: 7%;
+}
+
+.button {
+    margin: 0 auto;
+    width: 200px;
+}
+
+.button img {
+    width: 20px;
+    position: relative;
+    top: 3px;
+    margin-right: 5px;
+}
+
+.button:link {
+    background-color: #D4006F;
+    color: white;
+    padding: 10px 8px;
+    text-align: center;
+    border-radius: 5px;
+}
+  
+.button:hover {
+    background-color: #b1005b;
+    text-decoration: none !important;
+}
+
+#my-gallery {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 12%;
+}
+
+#my-gallery .image {
+    width: 95%;
+    margin: 0 auto;
+    height: 25vh;
+    margin-bottom: 5%;
+}

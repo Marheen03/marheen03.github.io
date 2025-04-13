@@ -18,7 +18,7 @@
                 <img src="../../images/icons/wifi.png">
     
                 <span class="separator2"></span>
-                <img src="../../images/icons/battery.png">
+                <img src="../../images/icons/battery.png" id="battery">
                 100 %
             </div>
             <p>
@@ -43,23 +43,16 @@
         const lang = urlParams.get('lang');
 
         var cvName = document.getElementById("cvName");
-        var errorMessage = document.getElementById("errorMessage");
-        var pdfViewer = document.getElementsByClassName("pdfViewer")[0];
-
         cvName.innerHTML = "zivotopis_" + lang + ".pdf";
         var url = "../../others/zivotopis_" + lang + ".pdf";
 
         if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            // pregledavanje preko mobitela
-            pdfViewer.style.display = "none";
-            errorMessage.style.display = "block";
-            
+            // pregledavanje preko mobitela            
             var link = document.querySelector("#errorMessage > a");
             link.href = url;
         } else {
             // pregledavanje preko računala
-            pdfViewer.style.display = "block";
-            errorMessage.style.display = "none";
+            var pdfViewer = document.getElementsByClassName("pdfViewer")[0];
             pdfViewer.data = url;
         }
     </script>

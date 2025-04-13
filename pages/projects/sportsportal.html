@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportsPortal</title>
+    <link rel="stylesheet" href="../../css/projects.css" type="text/css">
+    <link rel="stylesheet" href="../../css/mobile.css" type="text/css">
+    <link rel="stylesheet" href="../../css/photoswipe.css" type="text/css">
+</head>
+<body onload="initializeToolbarTime()" id="projectDetails">
+    <header>
+        <div class="content">
+            <div class="toolbar inverted">
+                <span id="currentTime"></span>
+                <span class="separator1"></span>
+    
+                <img src="../../images/icons/signal.png">
+                <img src="../../images/icons/wifi.png">
+    
+                <span class="separator2"></span>
+                <img src="../../images/icons/battery.png" id="battery">
+                100 %
+            </div>
+            <p>
+                <a href="index.html"><img src="../../images/icons/arrow.png"></a>
+                SportsPortal
+            </p>
+        </div>
+    </header>
+
+    <div class="content">
+        <h1 id="first">SportsPortal</h1>
+        
+        <p>
+            SportsPortal je web aplikacija koja nudi pregled i pretraživanje sportskih rezultata po momčadima i natjecanjima. Moguće je dodavanje novih momčadi, natjecanja i utakmica ukoliko ste prijavljeni kao administrator.
+        </p>
+        <p>
+            Izrađena je u Pythonu pomoću Django razvojnog okvira.
+        </p>
+
+        <p id="projectButtons">
+            <a href="https://marheen.pythonanywhere.com/" target="_blank" class="button">
+                <img src="../../images/icons/external.png">
+                Link
+            </a>
+            <a href="https://github.com/Marheen03/sportsPortal" target="_blank" class="button">
+                <img src="../../images/logos/github.png" style="filter: invert(1)">
+                Github
+            </a>
+        </p>
+
+        <div class="pswp-gallery" id="my-gallery">
+            <a href="../../images/sports_portal/sports_portal1.jpg"
+                data-pswp-width="700"
+                data-pswp-height="450"
+                target="_blank"
+            >
+                <div 
+                    class="image"
+                    style="background-image: url(../../images/sports_portal/sports_portal1.jpg);">
+                </div>
+            </a>
+            <a href="../../images/sports_portal/sports_portal2.jpg"
+                data-pswp-width="700"
+                data-pswp-height="450"
+                target="_blank"
+            >
+                <div 
+                    class="image"
+                    style="background-image: url(../../images/sports_portal/sports_portal2.jpg);">
+                </div>
+            </a>
+            <a href="../../images/sports_portal/sports_portal3.jpg"
+                data-pswp-width="700"
+                data-pswp-height="450"
+                target="_blank"
+            >
+                <div 
+                    class="image"
+                    style="background-image: url(../../images/sports_portal/sports_portal3.jpg);">
+                </div>
+            </a>
+            <a href="../../images/sports_portal/sports_portal4.jpg"
+                data-pswp-width="700"
+                data-pswp-height="450"
+                target="_blank"
+            >
+                <div 
+                    class="image"
+                    style="background-image: url(../../images/sports_portal/sports_portal4.jpg);">
+                </div>
+            </a>
+            <a href="../../images/sports_portal/sports_portal5.jpg"
+                data-pswp-width="700"
+                data-pswp-height="450"
+                target="_blank"
+            >
+                <div 
+                    class="image"
+                    style="background-image: url(../../images/sports_portal/sports_portal5.jpg);">
+                </div>
+            </a>
+            <a href="../../images/sports_portal/sports_portal6.jpg"
+                data-pswp-width="700"
+                data-pswp-height="450"
+                target="_blank"
+            >
+                <div 
+                    class="image"
+                    style="background-image: url(../../images/sports_portal/sports_portal6.jpg);">
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script src="../../script.js"></script>
+    <script type="module">
+        import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe/dist/photoswipe-lightbox.esm.js';
+
+        const lightbox = new PhotoSwipeLightbox({
+            gallery: '#my-gallery',
+            children: 'a',
+            pswpModule: () => import('https://unpkg.com/photoswipe')
+        });
+
+        lightbox.init();
+    </script>
+</body>
+</html>

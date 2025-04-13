@@ -59,7 +59,7 @@ h1 {
     overflow: hidden;
     background-color: #F8F8F8;
     border-bottom: 1px solid black;
-    transition: max-height 0.2s ease-out;
+    transition: 0.2s ease-out;
 }
 
 .collapsibleContent span {
@@ -71,19 +71,17 @@ h1 {
 
 .collapsibleContent .button {
     float: right;
-    margin-bottom: 12px;
 }
 
-.button:link, .button:visited {
+.button:link {
     background-color: #1A9B00;
     color: white;
     padding: 14px 14px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
     border-radius: 5px;
 }
   
-.button:hover, .button:active {
+.button:hover {
     background-color: #178501;
+    text-decoration: none !important;
 }

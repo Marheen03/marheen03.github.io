@@ -13,9 +13,13 @@ body {
 .toolbar img {
     display: inline-block;
     width: 16px;
-    transform: translateY(2px);
+    transform: translateY(1px);
 }
 
 .inverted {
     filter: invert(1);
+}
+
+#battery {
+    transform: translateY(2px);
 }

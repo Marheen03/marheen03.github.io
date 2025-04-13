@@ -33,6 +33,10 @@
         grid-template-columns: 10% 53% 7% 7% 1% 7% auto;
     }
 
+    #battery {
+        transform: translateY(3px);
+    }
+
     .dayTime {
         margin-top: 50%;
     }
@@ -120,11 +124,49 @@
     }
     
     .pdfViewer {
-        margin-top: 30%;
+        display: none;
     }
 
     #errorMessage {
+        display: block;
         margin-top: 30%;
         font-size: 23px;
+    }
+
+    h3 {
+        margin-bottom: 17%;
+    }
+
+    .project {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .project p {
+        font-size: 18px;
+    }
+
+    .image {
+        height: 20vh;
+    }
+
+    #projectButtons {
+        margin-top: 10%;
+    }
+
+    .button {
+        width: 80%;
+    }
+
+    .button img {
+        top: 4px;
+    }
+
+    #my-gallery {
+        margin-top: 17%;
+    }
+
+    #my-gallery .image {
+        height: 17vh;
     }
 }

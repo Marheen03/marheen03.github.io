@@ -57,7 +57,7 @@ function rotateTablet() {
     } else {
         toggled = false;
         tablet.style.transform = "rotate(0)";
-        circle.style.marginTop = "16px";
+        circle.style.marginTop = "17px";
 
         iframe.style.transform = "rotate(0) translate(0, 0)";
         iframe.style.height = width + "px";
@@ -71,13 +71,15 @@ function navigateToApp(x) {
         case 0:
             page = 'about';
             break;
+        case 1:
+            page = 'projects/index';
+            break;
         case 2:
             page = 'contacts';
             break;
         case 3:
             page = 'files/index';
             break;
-        
     }
     window.open(page + ".html", "_self");
 }
