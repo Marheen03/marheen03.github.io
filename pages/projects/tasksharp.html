@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskSharp</title>
+    <link rel="stylesheet" href="../../css/projects.css" type="text/css">
+    <link rel="stylesheet" href="../../css/mobile.css" type="text/css">
+    <link rel="stylesheet" href="../../css/photoswipe.css" type="text/css">
+</head>
+<body onload="initializeToolbarTime()" id="projectDetails">
+    <header>
+        <div class="content">
+            <div class="toolbar inverted">
+                <span id="currentTime"></span>
+                <span class="separator1"></span>
+    
+                <img src="../../images/icons/signal.png">
+                <img src="../../images/icons/wifi.png">
+    
+                <span class="separator2"></span>
+                <img src="../../images/icons/battery.png" id="battery">
+                100 %
+            </div>
+            <p>
+                <a href="index.html"><img src="../../images/icons/arrow.png"></a>
+                TaskSharp
+            </p>
+        </div>
+    </header>
+
+    <div class="content">
+        <h1 id="first">TaskSharp</h1>
+        
+        <p>
+            <strong>TaskSharp</strong> je kolaborativno izrađena desktop aplikacija koja nudi izradu i upravljanje različitim vrstama bilješki poput bilješki, događaja, podsjetnika i to-do listi.
+        </p>
+        <p>
+            Korištena tehnologija za izradu je C# zajedno s WPF (Windows Presentation Foundation) okvirom za definiranje korisničkog sučelja.
+        </p>
+
+        <p id="projectButtons" style="grid-template-columns: auto;">
+            <a href="https://github.com/9helix/TaskSharp" target="_blank" class="button">
+                <img src="../../images/logos/github.png" style="filter: invert(1) brightness(1.5);">
+                GitHub
+            </a>
+        </p>
+
+        <div class="pswp-gallery" id="my-gallery">
+            <a href="../../images/tasksharp/tasksharp1.jpg"
+                data-pswp-width="660"
+                data-pswp-height="430"
+                target="_blank"
+            >
+                <div 
+                    class="image"
+                    style="background-image: url(../../images/tasksharp/tasksharp1.jpg);">
+                </div>
+            </a>
+            <a href="../../images/tasksharp/tasksharp2.jpg"
+                data-pswp-width="1420"
+                data-pswp-height="1065"
+                target="_blank"
+            >
+                <div 
+                    class="image"
+                    style="background-image: url(../../images/tasksharp/tasksharp2.jpg);">
+                </div>
+            </a>
+            <a href="../../images/tasksharp/tasksharp3.jpg"
+                data-pswp-width="1420"
+                data-pswp-height="1060"
+                target="_blank"
+            >
+                <div 
+                    class="image"
+                    style="background-image: url(../../images/tasksharp/tasksharp3.jpg);">
+                </div>
+            </a>
+            <a href="../../images/tasksharp/tasksharp4.jpg"
+                data-pswp-width="985"
+                data-pswp-height="640"
+                target="_blank"
+            >
+                <div 
+                    class="image"
+                    style="background-image: url(../../images/tasksharp/tasksharp4.jpg);">
+                </div>
+            </a>
+            <a href="../../images/tasksharp/tasksharp5.jpg"
+                data-pswp-width="985"
+                data-pswp-height="640"
+                target="_blank"
+            >
+                <div 
+                    class="image"
+                    style="background-image: url(../../images/tasksharp/tasksharp5.jpg);">
+                </div>
+            </a>
+            <a href="../../images/tasksharp/tasksharp6.jpg"
+                data-pswp-width="985"
+                data-pswp-height="640"
+                target="_blank"
+            >
+                <div 
+                    class="image"
+                    style="background-image: url(../../images/tasksharp/tasksharp6.jpg);">
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script src="../../others/script.js"></script>
+    <script type="module">
+        import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe/dist/photoswipe-lightbox.esm.js';
+
+        const lightbox = new PhotoSwipeLightbox({
+            gallery: '#my-gallery',
+            children: 'a',
+            pswpModule: () => import('https://unpkg.com/photoswipe')
+        });
+
+        lightbox.init();
+    </script>
+</body>
+</html>
