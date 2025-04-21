@@ -33,9 +33,14 @@ function initializeToolbarTime() {
 }
 
 
+function activate() {
+    window.open("tablet", "_self");
+}
+
+
 function returntoHomeScreen() {
     var iframe = document.getElementsByTagName("iframe")[0];
-    iframe.src = "pages/home_screen.html";
+    iframe.src = "home_screen.html";
 }
 
 toggled = false;
@@ -64,6 +69,7 @@ function rotateTablet() {
         iframe.style.width = height + "px";
     }
 }
+
 
 function navigateToApp(x) {
     var page;

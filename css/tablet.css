@@ -10,6 +10,32 @@ body {
     font-family: SamsungSans;
 }
 
+.imageCentered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.turnOn {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.turnOn:hover {
+    filter: drop-shadow(0 5px 10px black);
+}
+
+.turnOnText {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+
 .tabletContent {
     width: 50%;
     margin: 0 auto;
