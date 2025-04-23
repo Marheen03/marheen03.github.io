@@ -11,6 +11,7 @@
     .tablet {
         margin: 0;
         height: 87vh;
+        width: 100%;
         border-bottom-width: 65px;
     }
 
@@ -24,6 +25,10 @@
 
     iframe {
         height: 99%;
+    }
+
+    #homescreenBanner h2 {
+        font-size: 40px;
     }
 
     .rotateTabletButton {

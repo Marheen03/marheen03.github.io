@@ -10,11 +10,13 @@ body {
     font-family: SamsungSans;
 }
 
-.imageCentered {
+.contentCentered {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    opacity: 0;
+    transition: opacity .6s;
 }
 
 .turnOn {
@@ -34,18 +36,12 @@ body {
     color: white;
     font-size: 40px;
 }
-
-
-.tabletContent {
-    width: 50%;
-    margin: 0 auto;
-}
   
 /* The device with borders */
 .tablet {
     position: relative;
-    width: auto;
-    height: 75vh;
+    width: 40%;
+    height: 70vh;
     margin: auto;
     margin-top: 4%;
     border: 30px black solid;

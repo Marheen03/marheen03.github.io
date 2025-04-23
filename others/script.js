@@ -1,3 +1,20 @@
+function initActivation() {
+    setTimeout(function() {
+        var content = document.getElementsByClassName("contentCentered")[0];
+        content.style.opacity = "1";
+    }, 400);
+}
+
+function activate() {
+    var content = document.getElementsByClassName("contentCentered")[0];
+    content.style.opacity = "0";
+
+    setTimeout(function() {
+        window.open("tablet", "_self");
+    }, 600);
+}
+
+
 function getHoursMinutes() {
     const date = new Date();
     var hoursMinutes = date.getHours() + ":" + (date.getMinutes() < 10 ? '0' : '') + date.getMinutes();
@@ -33,11 +50,6 @@ function initializeToolbarTime() {
 }
 
 
-function activate() {
-    window.open("tablet", "_self");
-}
-
-
 function returntoHomeScreen() {
     var iframe = document.getElementsByTagName("iframe")[0];
     iframe.src = "home_screen.html";
@@ -54,15 +66,15 @@ function rotateTablet() {
     if (!toggled) {
         toggled = true;
         tablet.style.transform = "rotate(90deg)";
-        circle.style.marginTop = "15.9%";
+        circle.style.marginTop = "22.5%";
 
-        iframe.style.transform = "rotate(-90deg) translate(-5%, -6%)";
+        iframe.style.transform = "rotate(-90deg) translate(-8%, -10%)";
         iframe.style.height = width + "px";
         iframe.style.width = height + "px";
     } else {
         toggled = false;
         tablet.style.transform = "rotate(0)";
-        circle.style.marginTop = "17px";
+        circle.style.marginTop = "16px";
 
         iframe.style.transform = "rotate(0) translate(0, 0)";
         iframe.style.height = width + "px";
