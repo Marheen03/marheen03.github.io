@@ -24,6 +24,8 @@ body {
     right: 0;
     width: 100%;
     height: 100vh;
+    opacity: 1;
+    transition: opacity .3s;
 }
 
 #homescreenBanner h2 {
@@ -31,6 +33,11 @@ body {
     text-align: center;
     font-size: 50px;
     line-height: 1.7;
+}
+
+#whiteScreen {
+    display: none;
+    transform: scale(0);
 }
 
 .content {

@@ -15,6 +15,11 @@ header {
     background-color: #2D82B7;
 }
 
+#whiteScreen {
+    display: block;
+    transform: scale(1);
+}
+
 h1 {
     font-size: 37px;
     margin-bottom: 7%;

@@ -49,7 +49,38 @@
     <div id="homescreenBanner">
         <h2>Autor:<br>Marin Rabađija</h2>
     </div>
+    
+    <div id="whiteScreen"></div>
 
     <script src="../others/script.js"></script>
+    <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const startup = urlParams.get('startup');
+
+        var banner = document.getElementById("homescreenBanner");
+        if (startup == "1") {
+            setTimeout(function() {
+                banner.style.opacity = "0";
+            }, 1450);
+            setTimeout(function() {
+                banner.remove();
+            }, 1800);
+        } else {
+            banner.style.display = "none";
+            banner.remove();
+
+            var whiteScreen = document.getElementById("whiteScreen");
+            whiteScreen.style.display = "block";
+            whiteScreen.style.transform = "scale(1)";
+
+            setTimeout(function() {
+                whiteScreen.style.transform = "scale(0)";
+            }, 200);
+            setTimeout(function() {
+                whiteScreen.style.display = "none";
+            }, 450);
+        }
+    </script>
 </body>
 </html>

@@ -2,7 +2,7 @@ function initActivation() {
     setTimeout(function() {
         var content = document.getElementsByClassName("contentCentered")[0];
         content.style.opacity = "1";
-    }, 400);
+    }, 300);
 }
 
 function activate() {
@@ -39,9 +39,21 @@ function initializeHomeScreen() {
     }, 1000);
 }
 
-function initializeToolbarTime() {
+function initializeToolbarTime(isWhiteScreen) {
     var hoursMinutes = getHoursMinutes();
     document.getElementById("currentTime").innerHTML = hoursMinutes;
+
+    if (isWhiteScreen) {
+        var whiteScreen = document.getElementById("whiteScreen");
+
+        setTimeout(function() {
+            whiteScreen.style.transform = "scale(0)";
+        }, 300);
+        setTimeout(function() {
+            whiteScreen.style.display = "none";
+            whiteScreen.remove();
+        }, 400);
+    }
 
     setInterval(function() {
         var hoursMinutes = getHoursMinutes();
@@ -52,7 +64,7 @@ function initializeToolbarTime() {
 
 function returntoHomeScreen() {
     var iframe = document.getElementsByTagName("iframe")[0];
-    iframe.src = "home_screen.html";
+    iframe.src = "home_screen.html?startup=0";
 }
 
 toggled = false;
@@ -85,6 +97,8 @@ function rotateTablet() {
 
 function navigateToApp(x) {
     var page;
+    var whiteScreen = document.getElementById("whiteScreen");
+
     switch(x) {
         case 0:
             page = 'about';
@@ -99,7 +113,15 @@ function navigateToApp(x) {
             page = 'files/index';
             break;
     }
-    window.open(page + ".html", "_self");
+
+    whiteScreen.style.display = "block";
+    setTimeout(function() {
+        whiteScreen.style.transform = "scale(1)";
+    }, 10);
+    
+    setTimeout(function() {
+        window.open(page + ".html", "_self");
+    }, 400);
 }
 
 function setActive(id) {

@@ -11,8 +11,10 @@
 <body onload="initActivation()">
     <div class="contentCentered">
         <div class="tablet">
-            <iframe src="home_screen.html"></iframe>
-            <div class="circle" onclick="returntoHomeScreen()"></div>
+            <iframe src="home_screen.html?startup=1"></iframe>
+
+            <div class="circle" onclick="returntoHomeScreen()"
+                title="Povratak na početni zaslon"></div>
         </div>
         
         <img src="../images/icons/rotateTablet.png" class="rotateTabletButton" title="Rotiraj tablet"

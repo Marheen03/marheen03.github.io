@@ -17,6 +17,15 @@ header img {
     top: 2px;
 }
 
+header p a {
+    color: #F28C32;
+}
+
+#whiteScreen {
+    display: block;
+    transform: scale(1);
+}
+
 .breadcrumb {
     width: 100%;
     padding-top: 10px;
@@ -100,7 +109,7 @@ header img {
 }
 
 .pdfViewer {
-    margin-top: -3%;
+    margin-top: -2%;
     width: 100%;
     height: 85vh;
     display: block;

@@ -17,6 +17,11 @@ h1 {
     text-align: center;
 }
 
+#whiteScreen {
+    display: block;
+    transform: scale(1);
+}
+
 .contactLetter {
     margin-top: 5%;
     margin-bottom: 7px;

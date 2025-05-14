@@ -17,6 +17,15 @@ header img {
     top: 2px;
 }
 
+header p a {
+    color: #D4006F;
+}
+
+#whiteScreen {
+    display: block;
+    transform: scale(1);
+}
+
 h1 {
     font-size: 37px;
     margin-top: 28%;

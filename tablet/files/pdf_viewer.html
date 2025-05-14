@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../../css/files.css" type="text/css">
     <link rel="stylesheet" href="../../css/mobile.css" type="text/css">
 </head>
-<body onload="initializeToolbarTime()" id="pdfView">
+<body onload="initializeToolbarTime(false)" id="pdfView">
     <header>
         <div class="content">
             <div class="toolbar inverted">
@@ -22,7 +22,9 @@
                 100 %
             </div>
             <p>
-                <a href="pdfs.html"><img src="../../images/icons/arrow.png"></a>
+                <a href="pdfs.html" title="Natrag">
+                    <img src="../../images/icons/arrow.png">
+                </a>
                 <span id="cvName"></span>
             </p>
         </div>
@@ -44,7 +46,7 @@
 
         var cvName = document.getElementById("cvName");
         cvName.innerHTML = "zivotopis_" + lang + ".pdf";
-        var url = "../../others/zivotopis_" + lang + ".pdf";
+        var url = "../../others/zivotopis_" + lang + ".pdf#view=Fit";
 
         if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             // pregledavanje preko mobitela            
