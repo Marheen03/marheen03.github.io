@@ -17,6 +17,10 @@ h1 {
     text-align: center;
 }
 
+#first {
+    margin-top: 30%;
+}
+
 #whiteScreen {
     display: block;
     transform: scale(1);

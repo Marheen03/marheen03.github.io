@@ -8,6 +8,9 @@ function initActivation() {
 function activate() {
     var content = document.getElementsByClassName("contentCentered")[0];
     content.style.opacity = "0";
+    
+    var audio = new Audio('sounds/activate.mp3');
+    audio.play();
 
     setTimeout(function() {
         window.open("tablet", "_self");
@@ -120,7 +123,7 @@ function navigateToApp(x) {
     }, 10);
     
     setTimeout(function() {
-        window.open(page + ".html", "_self");
+        window.open(page + ".html?anim=1", "_self");
     }, 400);
 }
 

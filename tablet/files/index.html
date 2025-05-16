@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../../css/files.css" type="text/css">
     <link rel="stylesheet" href="../../css/mobile.css" type="text/css">
 </head>
-<body onload="initializeToolbarTime(true)" id="files">
+<body id="files">
     <header>
         <div class="content">
             <div class="toolbar inverted">
@@ -40,6 +40,22 @@
     </a>
 
     <div id="whiteScreen"></div>
+
     <script src="../../others/script.js"></script>
+    <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const anim = urlParams.get('anim');
+
+        if (anim == "1") {
+            document.body.setAttribute("onload", "initializeToolbarTime(true)");
+        } else {
+            document.body.setAttribute("onload", "initializeToolbarTime(false)");
+            
+            var whiteScreen = document.getElementById("whiteScreen");
+            whiteScreen.style.display = "none";
+            whiteScreen.remove();
+        }
+    </script>
 </body>
 </html>

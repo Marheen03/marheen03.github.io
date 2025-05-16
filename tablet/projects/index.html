@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../../css/projects.css" type="text/css">
     <link rel="stylesheet" href="../../css/mobile.css" type="text/css">
 </head>
-<body onload="initializeToolbarTime(true)">
+<body>
     <header>
         <div class="content">
             <div class="toolbar inverted">
@@ -64,6 +64,20 @@
         var numOfProjects = document.getElementById("numOfProjects");
         var projects = document.querySelectorAll(".projects > a");
         numOfProjects.innerHTML = projects.length;
+
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const anim = urlParams.get('anim');
+
+        if (anim == "1") {
+            document.body.setAttribute("onload", "initializeToolbarTime(true)");
+        } else {
+            document.body.setAttribute("onload", "initializeToolbarTime(false)");
+            
+            var whiteScreen = document.getElementById("whiteScreen");
+            whiteScreen.style.display = "none";
+            whiteScreen.remove();
+        }
     </script>
 </body>
 </html>
