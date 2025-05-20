@@ -147,7 +147,7 @@
         const lightbox = new PhotoSwipeLightbox({
             gallery: '#my-gallery',
             children: 'a',
-            pswpModule: () => import('https://unpkg.com/photoswipe')
+            pswpModule: () => import('../../scripts/photoswipe.esm.js')
         });
 
         lightbox.init();
