@@ -110,3 +110,13 @@ iframe {
     filter: drop-shadow(0 0 5px black);
     transition: filter .2s;
 }
+
+#subtitles {
+    position: fixed;
+    bottom: 15px;
+    width: 100%;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    display: none;
+}

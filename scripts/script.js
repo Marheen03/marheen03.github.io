@@ -104,7 +104,7 @@ function navigateToApp(x) {
 
     switch(x) {
         case 0:
-            page = 'about';
+            page = 'about/index';
             break;
         case 1:
             page = 'projects/index';
@@ -125,12 +125,4 @@ function navigateToApp(x) {
     setTimeout(function() {
         window.open(page + ".html?anim=1", "_self");
     }, 400);
-}
-
-function setActive(id) {
-    var footerLinks = document.querySelectorAll('footer > a > div');
-    for (var i=0; i < footerLinks.length; i++) {
-        footerLinks[i].classList.remove('active');
-    }
-    footerLinks[id].classList.add('active');
 }

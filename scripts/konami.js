@@ -18,6 +18,10 @@ var keyHandler = function (event) {
         button.removeAttribute("onclick");
         button.style.cursor = "initial";
 
+        var subtitles = document.getElementById('subtitles');
+        subtitles.style.display = "block";
+        subtitles.innerHTML = "Secret mode activated.";
+
         const rotation = getRotationDegrees(tablet);
         var spin;
 
@@ -40,6 +44,8 @@ var keyHandler = function (event) {
         setTimeout(function() {
             audio = new Audio('../sounds/spin.mp3');
             audio.play();
+
+            subtitles.style.display = "none";
         }, 1700);
 
         setTimeout(function() {
@@ -50,6 +56,9 @@ var keyHandler = function (event) {
         setTimeout(function() {
             audio = new Audio('../sounds/sam2.mp3');
             audio.play();
+
+            subtitles.style.display = "block";
+            subtitles.innerHTML = "Secret mode aborted.";
         }, 10600);
 
         setTimeout(function() {
@@ -57,6 +66,10 @@ var keyHandler = function (event) {
             button.setAttribute("onclick", "rotateTablet()");
             button.style.cursor = "pointer";
         }, 10700);
+
+        setTimeout(function() {
+            subtitles.style.display = "none";
+        }, 12000);
     }
 };
 
@@ -65,7 +78,7 @@ document.addEventListener('keydown', keyHandler, false);
 
 function getRotationDegrees(element) {
     const style = window.getComputedStyle(element);
-    const transform = style.transform || style.webkitTransform || style.mozTransform;
+    const transform = style.transform || style.mozTransform;
 
     // If there's no transform applied
     if (!transform || transform === 'none') {

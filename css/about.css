@@ -41,7 +41,12 @@ h1 {
 
 .scroll-container {
     height: auto;
+    margin-top: 5%;
     margin-bottom: 40%;
+}
+
+ul li {
+  margin: 10px 0;
 }
   
 .carousel-primary,
@@ -142,7 +147,7 @@ footer img {
     filter: invert(20%) sepia(243%) saturate(1576%) hue-rotate(207deg) brightness(120%) contrast(73%);
 }
 
-footer a:link {
+footer a:link, footer a:visited {
     text-decoration: none;
     color: black;
 }
