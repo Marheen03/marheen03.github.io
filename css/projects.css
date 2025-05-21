@@ -48,7 +48,7 @@ h3 {
     grid-template-columns: auto auto;
 }
 
-.projects a:link {
+.projects a:link, .projects a:visited {
     color: black;
 }
 
@@ -90,7 +90,7 @@ h3 {
     margin-right: 5px;
 }
 
-.button:link {
+.button:link, .button:visited {
     background-color: #D4006F;
     color: white;
     padding: 10px 8px;

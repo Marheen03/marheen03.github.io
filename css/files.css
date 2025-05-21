@@ -46,7 +46,7 @@ header p a {
     font-weight: bold;
 }
 
-.breadcrumb a:link {
+.breadcrumb a:link, .breadcrumb a:visited {
     color: black;
 }
 

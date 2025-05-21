@@ -82,7 +82,7 @@ h1 {
     float: right;
 }
 
-.button:link {
+.button:link, .button:visited {
     background-color: #1A9B00;
     color: white;
     padding: 14px 14px;
