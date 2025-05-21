@@ -70,9 +70,13 @@
         margin-top: 20%;
     }
 
-    #first {
+    #first, #first {
         margin-top: 40%;
         margin-bottom: 10%;
+    }
+
+    #files #first {
+        margin-bottom: 0;
     }
 
     .scroll-container {
