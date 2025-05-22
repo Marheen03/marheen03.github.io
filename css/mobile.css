@@ -10,7 +10,6 @@
 
     .tablet {
         margin: 0;
-        height: 87vh;
         width: 100%;
         border-bottom-width: 65px;
     }
@@ -44,12 +43,12 @@
     }
 
     .dayTime {
-        margin-top: 50%;
+        margin-top: clamp(50px, 28vw, 300px);
     }
 
     .iconsGrid {
         font-size: 15px;
-        margin-top: 80%;
+        margin-top: clamp(100px, 68vw, 550px);
     }
 
     .iconsGrid img {

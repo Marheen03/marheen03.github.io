@@ -25,5 +25,22 @@
 
     <script src="../scripts/script.js"></script>
     <script src="../scripts/konami.js"></script>
+    <script>
+        var adjustHeight
+        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            adjustHeight = function adjustHeight() {
+                const vh = window.innerHeight * 0.85;
+                document.querySelector('.tablet').style.height = `${vh}px`;
+            }
+        } else {
+            adjustHeight = function adjustHeight() {
+                const vh = window.innerHeight * 0.68;
+                document.querySelector('.tablet').style.height = `${vh}px`;
+            }
+        }
+
+        window.addEventListener('resize', adjustHeight);
+        window.addEventListener('load', adjustHeight);
+</script>
 </body>
 </html>

@@ -73,7 +73,9 @@ var keyHandler = function (event) {
     }
 };
 
-document.addEventListener('keydown', keyHandler, false);
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) == false) {
+    document.addEventListener('keydown', keyHandler, false);
+}
 
 
 function getRotationDegrees(element) {

@@ -81,7 +81,7 @@ function rotateTablet() {
     if (!toggled) {
         toggled = true;
         tablet.style.transform = "rotate(90deg)";
-        circle.style.marginTop = "22.5%";
+        circle.style.marginTop = "19.2%";
 
         iframe.style.transform = "rotate(-90deg) translate(-8%, -10%)";
         iframe.style.height = width + "px";

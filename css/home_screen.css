@@ -61,7 +61,7 @@ body {
 .iconsGrid {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    margin-top: 35%;
+    margin-top: 30%;
     text-align: center;
     color: white;
     font-size: 17px;
