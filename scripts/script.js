@@ -1,6 +1,6 @@
 function initActivation() {
     setTimeout(function() {
-        var content = document.getElementsByClassName("contentCentered")[0];
+        var content = document.getElementById("contentCentered");
         content.style.opacity = "1";
     }, 300);
 }
