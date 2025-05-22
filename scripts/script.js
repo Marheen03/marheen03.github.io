@@ -86,17 +86,17 @@ function rotateTablet() {
     if (!toggled) {
         toggled = true;
         tablet.style.transform = "rotate(90deg)";
-        circle.style.marginTop = "19.2%";
+        circle.classList.toggle("rotatedCircle");
 
-        iframe.style.transform = "rotate(-90deg) translate(-8%, -10%)";
+        iframe.classList.toggle("rotatedIframe");
         iframe.style.height = width + "px";
         iframe.style.width = height + "px";
     } else {
         toggled = false;
         tablet.style.transform = "rotate(0)";
-        circle.style.marginTop = "16px";
+        circle.classList.toggle("rotatedCircle");
 
-        iframe.style.transform = "rotate(0) translate(0, 0)";
+        iframe.classList.toggle("rotatedIframe");
         iframe.style.height = width + "px";
         iframe.style.width = height + "px";
     }

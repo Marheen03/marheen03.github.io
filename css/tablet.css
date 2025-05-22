@@ -47,7 +47,7 @@ body {
   
 .tablet {
     position: relative;
-    width: 40%;
+    width: 14cm;
     margin: auto;
     margin-top: 4%;
     border: 30px black solid;
@@ -91,16 +91,30 @@ iframe {
     background-color: white;
 }
 
+.rotatedIframe {
+    transform: rotate(-90deg) translate(-50%, -55%);
+    transform-origin: top center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .circle {
     width: 36px;
     height: 36px;
     background-color: black;
     border-radius: 50%;
     margin: 0 auto;
-    margin-top: 16px;
+    margin-top: 4.2mm;
     position: relative;
     z-index: 1;
     cursor: pointer;
+}
+
+.rotatedCircle {
+    position: absolute;
+    bottom: -1.48cm;
+    margin-left: 6.53cm;
 }
 
 .rotateTabletButton {
