@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="../css/mobile.css" type="text/css">
     <link rel="icon" type="image/x-icon" href="../images/favicon.png">
 </head>
-<body onload="initActivation()">
-    <div id="contentCentered">
+<body onload="initActivation('tablet')">
+    <div class="tabletCentered">
         <div class="tablet">
             <iframe src="home_screen.html?startup=1"></iframe>
 
@@ -29,7 +29,7 @@
         var adjustHeight
         if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             adjustHeight = function adjustHeight() {
-                const vh = window.innerHeight * 0.85;
+                const vh = window.innerHeight * 0.82;
                 document.querySelector('.tablet').style.height = `${vh}px`;
             }
         } else {

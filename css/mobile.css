@@ -15,7 +15,7 @@
     }
 
     .circle {
-        margin-top: 12px;
+        margin-top: 11px;
     }
 
     iframe {
@@ -44,7 +44,7 @@
 
     .iconsGrid {
         font-size: 15px;
-        margin-top: clamp(100px, 68vw, 550px);
+        margin-top: clamp(100px, 65vw, 550px);
     }
 
     .iconsGrid img {

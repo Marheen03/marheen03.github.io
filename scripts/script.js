@@ -1,6 +1,11 @@
-function initActivation() {
+function initActivation(type) {
     setTimeout(function() {
-        var content = document.getElementById("contentCentered");
+        var content;
+        if (type == 'start') {
+            content = document.getElementsByClassName("contentCentered")[0];
+        } else {
+            content = document.getElementsByClassName("tabletCentered")[0];
+        }
         content.style.opacity = "1";
     }, 300);
 }
