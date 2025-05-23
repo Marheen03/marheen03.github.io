@@ -92,7 +92,7 @@ iframe {
 }
 
 .rotatedIframe {
-    transform: rotate(-90deg) translate(-50%, -55%);
+    transform: rotate(-90deg) translate(-7.7cm, -7.7cm);
     transform-origin: top center;
     position: absolute;
     top: 0;
